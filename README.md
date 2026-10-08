@@ -8,14 +8,14 @@ Batangas State University, Alangilan Campus
 
 | Name | Student Number | Section |
 |---|---|---|
-| Surname, First Name | | |
-| Surname, First Name | | |
+| Cruz, Alliah Brent |22- |MEXE-4103 | 
+| De Villa, Jhon Nicoz |22-02085 |MEXE-4103 |
 
 ## Notebook links
 
 | Chapter | Member 1 | Member 2 |
 |---|---|---|
-| Ch1_2_3 | [link]() | [link]() |
+| Ch1_2_3 | [link]() | [link](https://colab.research.google.com/drive/1CYnEloJcJ4P3dNukBhwQJ6AL8GaXladQ?usp=sharing) |
 | Ch4 | [link]() | [link]() |
 | Ch5 | [link]() | [link]() |
 | Ch6 | [link]() | [link]() |
