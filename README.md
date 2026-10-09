@@ -100,6 +100,7 @@ I learned how various preprocessing methods come together in practice to get a r
 **Chapter 6**
 
 The Error:
+
 In the Z-score detection section, the condition np.abs(z_scores) > 3 fails to identify 100 as an outlier, resulting in an empty array []. However, the subsequent text cell states: "In this example, the number 100 is a clear outlier, being significantly higher than the other numbers." 
 
 The maximum Z-score calculated for the value 100 in the sample dataset is approximately 2.615.  
@@ -109,19 +110,23 @@ Because the code filters using a threshold of 3:
 The Z-score for 100 is below 3 because the extreme value itself inflates both the mean and the standard deviation of small sample sizes (N = 8), reducing the resulting Z-score.
 
 The Fix:
+
 To align the Z-score code with the dataset and the narrative markdown, adjust the Z-score threshold from 3 to 2.5 or 2.0. 
 
 Code:
+
 #Find outliers using a adjusted threshold (e.g., > 2.5)
 outliers = data[np.abs(z_scores) > 2.5]
 print("Outliers: ", outliers)
 
 Text:
+
 Outliers:  [100]
 
 **Chaper 7** 
 
 The Error:
+
 The original code throws a ValueError during selector.fit() because cv=5 is incompatible with a 7-sample dataset.  
 Insufficient Dataset Size: df_2 contains only 7 rows of data.  
 K-Fold Cross-Validation Requirements: Setting cv=5 attempts to split those 7 rows into 5 separate folds.  
@@ -129,6 +134,7 @@ This creates small validation subsets with as few as 1 sample per fold.
 Estimators like Support Vector Regression (SVR) cannot reliably calculate performance metrics or fit internal cross-validation models on validation folds with so few samples, causing scikit-learn's validation routines to crash. 
 
 New code: 
+
 Sufficient Sample-Per-Fold Ratio: Reducing the splits from 5 to 3 means each training/validation fold gets enough data points (~2 to 3 samples per validation set instead of 1) for the SVR estimator to evaluate model accuracy without throwing an error.  
 Cleaner Output Formatting: Wrapping columns[selector.support_] in list(...) formats the selected feature names cleanly as a Python list in the printed output.  
 
@@ -136,6 +142,7 @@ Cleaner Output Formatting: Wrapping columns[selector.support_] in list(...) form
 cross-validation splits to 3 because our dataset only has 7 samples
 selector
 RFECV(estimator, step=1, cv=3)
+
 #Fit the data
 selector
 = selector.fit(df_2.drop('final grade', axis=1), df_2['final grade'])
