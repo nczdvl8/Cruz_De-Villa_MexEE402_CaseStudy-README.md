@@ -30,9 +30,33 @@ you and what surprised you. Not what the library does, but what you understood._
 
 **(CRUZ)**
 
+**CHAPTER 1_2_3**
+
+This chapters helped me understand how to use Python and Pandas to load CSV datasets, examine their structure using "head()", "info()", and "describe()", and identify data quality issues. I also learned to handle missing values through imputation, deletion, or prediction, as well as remove duplicates, irrelevant columns, and noisy data. Working with the Video Game Sales dataset taught me to clean data carefully because changing or removing values can affect the information available for analysis and machine learning.
+
+**CHAPTER 4**
+
+I learned how feature engineering creates useful variables from existing data, such as dividing sales by temperature to examine their relationship. I also studied binning, interaction features, polynomial features, and categorical encoding, including one-hot encoding for unordered categories and ordinal encoding for ordered categories. These techniques taught me to choose transformations based on the meaning of the data so that machine learning models can identify useful patterns.
+
+**CHAPTER 5**
+
+This chapter showed me that data scaling and normalization help make numerical features comparable, especially when their values differ greatly, as in study hours and grades. Using Scikit-learn, I explored "StandardScaler", which adjusts data to a mean of 0 and standard deviation of 1, and "MinMaxScaler", which scales values between 0 and 1. I also understood that scaling is not necessary for every algorithm, so the method should depend on the dataset and model being used.
+
+**CHAPTER 6**
+
+This chapter gave me a better understanding on how to identify outliers using the Z-score and Interquartile Range (IQR) methods and understand how unusual values can affect data analysis. I also explored ways to handle them, including capping and flooring, log transformation, and removal when appropriate. The main lesson was to determine whether an outlier is an error or meaningful information before deciding how to treat it.
+
 **CHAPTER 7**
 
-In this chapter, I learned how outliers can affect data analysis and why they need to be identified before drawing conclusions. Outliers are values that differ greatly from most of the data and may lead to misleading results if they are not examined properly. I also learned how to use the Z-score and IQR methods to detect unusual values through Python. Aside from identifying outliers, I learned different ways to handle them, such as capping and flooring, log transformation, and removing values when justified. This chapter helped me understand that data cleaning is not just about correcting unusual numbers but also about deciding whether they represent errors or meaningful information. Choosing the right method is important to keep the analysis reliable and avoid losing useful data.
+I understood how feature selection identifies the variables that contribute most to predicting a target, while correlation helps show positive, negative, or no linear relationships between variables. I explored filter, wrapper, and embedded methods, including correlation analysis with Pandas, RFECV for selecting features through cross-validation, and LassoCV for reducing the influence of less useful features. These methods showed me how selecting relevant inputs can simplify a model and improve its effectiveness.
+
+**CHAPTER 8**
+
+Through the Titanic dataset, I learned how to build a preprocessing pipeline using the Titanic dataset by examining the data with Pandas and separating the features from the target variable. I explored "SimpleImputer" for replacing missing values, "StandardScaler" for standardizing numerical features, and "ColumnTransformer" for applying preprocessing steps to selected columns such as Age and Fare. This chapter taught me how pipelines organize preprocessing steps, reduce repetitive work, and make data preparation easier to reuse.
+
+**CHAPTER 9**
+
+I learned how to prepare the Titanic dataset by handling missing numerical values through median imputation, filling categorical missing values with a constant, and applying "StandardScaler" and "OneHotEncoder". I also studied how "Pipeline" and "ColumnTransformer" organize these operations, while data reduction removes unnecessary columns and discretization groups numerical values such as age into categories. Finally, I learned to check the processed data using missing-value checks, histograms, box plots, count plots, and correlation heatmaps to evaluate data quality and identify patterns before further analysis.
 
 **(DE VILLA)**
 
