@@ -97,6 +97,9 @@ I learned how various preprocessing methods come together in practice to get a r
 
 ## Errors we found
 
+**Chaper 7** 
+blob:https://www.messenger.com/1166b31f-e545-4111-bc29-7ed77ce50216
+
 _List any mistake you found in the original notebooks, and the correct version.
 There are real ones in there. Finding them earns points._
 
