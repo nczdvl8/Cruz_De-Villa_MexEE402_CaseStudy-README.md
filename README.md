@@ -110,14 +110,14 @@ New code:
 Sufficient Sample-Per-Fold Ratio: Reducing the splits from 5 to 3 means each training/validation fold gets enough data points (~2 to 3 samples per validation set instead of 1) for the SVR estimator to evaluate model accuracy without throwing an error.  
 Cleaner Output Formatting: Wrapping columns[selector.support_] in list(...) formats the selected feature names cleanly as a Python list in the printed output.  
 
-# Adjust
+#Adjust
 cross-validation splits to 3 because our dataset only has 7 samples
 selector
 RFECV(estimator, step=1, cv=3)
-# Fit the data
+#Fit the data
 selector
 = selector.fit(df_2.drop('final grade', axis=1), df_2['final grade'])
-# Print out the features selected
+#Print out the features selected
 print("Selected Features:", list(df_2.drop('final grade', axis=1).columns[selector.support_]))
 
 ## Note on AI tools
