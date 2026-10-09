@@ -40,7 +40,7 @@ I learned how feature engineering creates useful variables from existing data, s
 
 **CHAPTER 5**
 
-This chapter showed me that data scaling and normalization help make numerical features comparable, especially when their values differ greatly, as in study hours and grades. Using Scikit-learn, I explored "StandardScaler", which adjusts data to a mean of 0 and standard deviation of 1, and "MinMaxScaler", which scales values between 0 and 1. I also understood that scaling is not necessary for every algorithm, so the method should depend on the dataset and model being used.
+This chapter showed me that data scaling and normalization help make numerical features comparable, especially when their values differ greatly, as in study hours and grades. Using Scikit-learn, I explored StandardScaler, which adjusts data to a mean of 0 and standard deviation of 1, and MinMaxScaler, which scales values between 0 and 1. I also understood that scaling is not necessary for every algorithm, so the method should depend on the dataset and model being used.
 
 **CHAPTER 6**
 
@@ -52,11 +52,11 @@ I understood how feature selection identifies the variables that contribute most
 
 **CHAPTER 8**
 
-Through the Titanic dataset, I learned how to build a preprocessing pipeline using the Titanic dataset by examining the data with Pandas and separating the features from the target variable. I explored "SimpleImputer" for replacing missing values, "StandardScaler" for standardizing numerical features, and "ColumnTransformer" for applying preprocessing steps to selected columns such as Age and Fare. This chapter taught me how pipelines organize preprocessing steps, reduce repetitive work, and make data preparation easier to reuse.
+Through the Titanic dataset, I learned how to build a preprocessing pipeline using the Titanic dataset by examining the data with Pandas and separating the features from the target variable. I explored that SimpleImputer is for replacing missing values, StandardScaler is for standardizing numerical features, and ColumnTransformer is for applying preprocessing steps to selected columns such as Age and Fare. This chapter taught me how pipelines organize preprocessing steps, reduce repetitive work, and make data preparation easier to reuse.
 
 **CHAPTER 9**
 
-I learned how to prepare the Titanic dataset by handling missing numerical values through median imputation, filling categorical missing values with a constant, and applying "StandardScaler" and "OneHotEncoder". I also studied how "Pipeline" and "ColumnTransformer" organize these operations, while data reduction removes unnecessary columns and discretization groups numerical values such as age into categories. Finally, I learned to check the processed data using missing-value checks, histograms, box plots, count plots, and correlation heatmaps to evaluate data quality and identify patterns before further analysis.
+I learned how to prepare the Titanic dataset by handling missing numerical values through median imputation, filling categorical missing values with a constant, and applying StandardScaler and OneHotEncoder. I also studied how  Pipeline and ColumnTransformer organize these operations, while data reduction removes unnecessary columns and discretization groups numerical values such as age into categories. Finally, I learned to check the processed data using missing-value checks, histograms, box plots, count plots, and correlation heatmaps to evaluate data quality and identify patterns before further analysis.
 
 **(DE VILLA)**
 
