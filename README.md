@@ -98,7 +98,9 @@ I learned how various preprocessing methods come together in practice to get a r
 ## Errors we found
 
 **Chapter 6**
+
 The Error:
+
 In the Z-score detection section, the condition np.abs(z_scores) > 3 fails to identify 100 as an outlier, resulting in an empty array []. However, the subsequent text cell states: "In this example, the number 100 is a clear outlier, being significantly higher than the other numbers." 
 
 The maximum Z-score calculated for the value 100 in the sample dataset is approximately 2.615.  
@@ -120,7 +122,9 @@ Text:
 Outliers:  [100]
 
 **Chaper 7** 
+
 The Error:
+
 The original code throws a ValueError during selector.fit() because cv=5 is incompatible with a 7-sample dataset.  
 Insufficient Dataset Size: df_2 contains only 7 rows of data.  
 K-Fold Cross-Validation Requirements: Setting cv=5 attempts to split those 7 rows into 5 separate folds.  
