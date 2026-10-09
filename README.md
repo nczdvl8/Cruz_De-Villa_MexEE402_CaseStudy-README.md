@@ -70,14 +70,14 @@ I learned how various preprocessing methods come together in practice to get a r
 _List any mistake you found in the original notebooks, and the correct version.
 There are real ones in there. Finding them earns points._
 
-We did not encounter or notice any syntax errors when running the code snippets provided in the notebook. Everything executed as expected during our walkthrough.
+* We did not encounter or notice any syntax errors when running the code snippets provided in the notebook. Everything executed as expected during our walkthrough.
 
 ## Note on AI tools
 
 _Say whether you used an AI tool, and what for. This is not a penalty.
 Hiding it is._
 
-We did not use any AI tools to generate or fix code, as we were able to run all code snippets without encountering any errors.
+* We did not use any AI tools to generate or fix code, as we were able to run all code snippets without encountering any errors.
 
 ## References
 
