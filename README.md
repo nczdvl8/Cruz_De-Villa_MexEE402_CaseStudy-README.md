@@ -28,9 +28,9 @@ Batangas State University, Alangilan Campus
 _One short paragraph per chapter, Ch1_2_3 to Ch9. Say what the chapter taught
 you and what surprised you. Not what the library does, but what you understood._
 
-(DE VILLA)
+**(DE VILLA)**
 
-**CHAPTER 1,2,3**
+**CHAPTER 1_2_3**
 
 <p align="justify">
 Learning about data preprocessing changed how I look at data science because I realized most of the work happens early on since real-world data is usually messy and incomplete. In chapter 1, I understood that a good model means nothing if your data is bad, because garbage input just gives bad results faster. Chapter 2 taught me how to inspect a dataset simply by checking data types and basic summary stats. I was surprised that a simple table can already show you extreme numbers and gaps before you even draw any charts. Finally, chapter 3 showed me that fixing missing values or duplicate rows isn't just about running code automatically. I was surprised by how a quick fix, like filling missing years with an average that has decimals, can mess up the real meaning of the data if you don't double-check it yourself.
