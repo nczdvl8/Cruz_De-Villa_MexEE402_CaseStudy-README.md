@@ -98,19 +98,32 @@ I learned how various preprocessing methods come together in practice to get a r
 ## Errors we found
 
 **Chaper 7** 
-blob:https://www.messenger.com/1166b31f-e545-4111-bc29-7ed77ce50216
+The Error in the Original Code:
+The original code throws a ValueError during selector.fit() because cv=5 is incompatible with a 7-sample dataset.  
+Insufficient Dataset Size: df_2 contains only 7 rows of data.  
+K-Fold Cross-Validation Requirements: Setting cv=5 attempts to split those 7 rows into 5 separate folds.  
+This creates small validation subsets with as few as 1 sample per fold.  
+Estimators like Support Vector Regression (SVR) cannot reliably calculate performance metrics or fit internal cross-validation models on validation folds with so few samples, causing scikit-learn's validation routines to crash. 
 
-_List any mistake you found in the original notebooks, and the correct version.
-There are real ones in there. Finding them earns points._
 
-* We did not encounter or notice any syntax errors when running the code snippets provided in the notebook. Everything executed as expected during our walkthrough.
+New code: 
+Sufficient Sample-Per-Fold Ratio: Reducing the splits from 5 to 3 means each training/validation fold gets enough data points (~2 to 3 samples per validation set instead of 1) for the SVR estimator to evaluate model accuracy without throwing an error.  
+Cleaner Output Formatting: Wrapping columns[selector.support_] in list(...) formats the selected feature names cleanly as a Python list in the printed output.  
+
+# Adjust
+cross-validation splits to 3 because our dataset only has 7 samples
+selector
+RFECV(estimator, step=1, cv=3)
+# Fit the data
+selector
+= selector.fit(df_2.drop('final grade', axis=1), df_2['final grade'])
+# Print out the features selected
+print("Selected Features:", list(df_2.drop('final grade', axis=1).columns[selector.support_]))
 
 ## Note on AI tools
 
-_Say whether you used an AI tool, and what for. This is not a penalty.
-Hiding it is._
+Using an AI assistant for this case study and specifically for fixing the code in Chapter 7—accelerated the debugging process by instantly identifying the root cause of the error. Instead of searching through long stack traces, the AI immediately recognized that requesting a 5-fold cross-validation (cv=5) on a small dataset containing only 7 samples caused RFECV to fail due to insufficient data per fold. Beyond simply diagnosing the issue, the AI served as an interactive tutor by explaining the underlying machine learning concepts, showing how K-Fold splits interact with sample sizes and estimator stability in Support Vector Regression. It then provided a targeted, minimal fix by reducing cv to 3 and clean-formatting the output, allowing for a smooth transition from theoretical learning to a fully functioning code pipeline.
 
-* We did not use any AI tools to generate or fix code, as we were able to run all code snippets without encountering any errors.
 
 ## References
 
