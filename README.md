@@ -28,6 +28,12 @@ Batangas State University, Alangilan Campus
 _One short paragraph per chapter, Ch1_2_3 to Ch9. Say what the chapter taught
 you and what surprised you. Not what the library does, but what you understood._
 
+**(CRUZ)**
+
+**CHAPTER 7**
+
+In this chapter, I learned how outliers can affect data analysis and why they need to be identified before drawing conclusions. Outliers are values that differ greatly from most of the data and may lead to misleading results if they are not examined properly. I also learned how to use the Z-score and IQR methods to detect unusual values through Python. Aside from identifying outliers, I learned different ways to handle them, such as capping and flooring, log transformation, and removing values when justified. This chapter helped me understand that data cleaning is not just about correcting unusual numbers but also about deciding whether they represent errors or meaningful information. Choosing the right method is important to keep the analysis reliable and avoid losing useful data.
+
 **(DE VILLA)**
 
 **CHAPTER 1_2_3**
